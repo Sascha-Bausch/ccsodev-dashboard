@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/SVA-Logo.png" />
+    <img alt="SVA logo" src="../assets/SVA-Logo.png" />
     <DashHome msg="CC Software Development Dashboard" />
   </div>
 </template>
