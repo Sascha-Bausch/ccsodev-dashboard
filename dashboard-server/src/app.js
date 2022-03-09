@@ -9,10 +9,10 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/status', (req, res) => {
-    res.send({
-        message: 'nochmal Gude'
-    })
+const messages = [{ msg1: 'nochmal Gude!' }]
+
+app.get('/status', (_req, res) => {
+    res.send(messages)
 })
 
-app.listen(process.env.PORT || 8080)
+app.listen(process.env.PORT || 8080, 8081)
