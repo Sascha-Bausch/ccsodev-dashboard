@@ -6,7 +6,7 @@
   <div id="app">
     <h2>{{ date }}</h2>
     <p>
-      Here's the time & the number of times the button is clicked:
+      Here's the current time & the number of times the button is clicked:
       {{ showTime }}
     </p>
     <button @click="clickButton">Click me!</button>

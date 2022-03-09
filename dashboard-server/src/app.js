@@ -4,6 +4,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
+// create an express application which runs on port 8080 or 8081
+
 const app = express()
 app.use(morgan('combined'))
 app.use(bodyParser.json())
