@@ -10,11 +10,18 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-const messages = [{ msg1: 'nochmal Gude!' }]
+// create endpoint 'register'
+app.post('/register', (req, res) => {
+    res.send({
+        message: `this is the test email: ${req.body.email} - topmuse!`
+    })
+})
 
+/* 
 // create an endpoint called 'status'
+const messages = [{ msg1: 'nochmal Gude!' }]
 app.get('/status', (_req, res) => {
     res.send(messages)
 })
-
+ */
 app.listen(process.env.PORT || 8080, 8081)
