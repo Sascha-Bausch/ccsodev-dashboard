@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import AuthentificationService from "@/services/AuthentificationService"
+import AuthenticationService from "@/services/AuthenticationService"
 
 export default {
     data () {
@@ -29,12 +29,13 @@ export default {
     },
     methods: {
         async register () {
-            await AuthentificationService.register({
+            console.log('button was clicked', this.email, this.password)
+            await AuthenticationService.register({
                 email: this.email,
                 password: this.password
             })
         }
-    }
+    },
     /* watch: {
         email (value) {
             console.log('email has changed', value);
