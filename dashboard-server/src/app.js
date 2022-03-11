@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
-// create an express application which runs on port 8080 or 8081
+// create an express application which runs on port 8080
 const app = express()
 app.use(morgan('combined'))
 app.use(bodyParser.json())
@@ -24,4 +24,4 @@ app.get('/status', (_req, res) => {
     res.send(messages)
 })
  */
-app.listen(process.env.PORT || 8080, 8081)
+app.listen(process.env.PORT || 8080)

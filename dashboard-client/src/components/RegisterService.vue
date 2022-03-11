@@ -18,28 +18,36 @@
 </template>
 
 <script>
+import AuthentificationService from "@/services/AuthentificationService"
+
 export default {
     data () {
         return {
-            email:'abc',
-            password: '123'
+            email:'',
+            password: ''
         }        
     },
-    watch: {
+    methods: {
+        async register () {
+            await AuthentificationService.register({
+                email: this.email,
+                password: this.password
+            })
+        }
+    }
+    /* watch: {
         email (value) {
             console.log('email has changed', value);
         }
-    },
-    methods: {
+    }, */
+    /* methods: {
         register () {
-            console.log('button was clicked');
+            console.log('button was clicked', this.email, this.password);
         }
-    },
-    mounted () {
-        setTimeout(() => {
-            this.email = 'things done changed'
-        }, 2000)
-    }
+    }, */
+    /* mounted () {
+        
+    } */
 }
 </script>
 

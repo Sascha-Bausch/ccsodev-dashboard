@@ -9,4 +9,5 @@ export default {
 /* AuthentificationService.register({
     email: 'test@sva.de',
     password: '12345'
-}) */
+})
+ */
