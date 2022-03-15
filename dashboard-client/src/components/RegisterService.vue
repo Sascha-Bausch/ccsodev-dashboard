@@ -30,10 +30,14 @@ export default {
     methods: {
         async register () {
             console.log('button was clicked', this.email, this.password)
-            await AuthenticationService.register({
-                email: this.email,
-                password: this.password
-            })
+            try {
+                await AuthenticationService.register({
+                    email: this.email,
+                    password: this.password
+                })
+            } catch (error) {
+                this.error = error.response.data.error
+            }
         }
     },
     /* watch: {

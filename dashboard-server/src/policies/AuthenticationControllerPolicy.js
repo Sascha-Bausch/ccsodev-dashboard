@@ -1,6 +1,4 @@
-// Express middleware
-
-/* const Joi = require('joi')
+const Joi = require('joi')
 
 module.exports = {
     register (req, res, next) {
@@ -8,7 +6,7 @@ module.exports = {
             email: Joi.string().email(),
             password: Joi.string().regex(new RegExp('^[a-zA-Z0-9]{8,32}$'))
         })
-        const {error} = schema.validate(req.body, schema)
+        const {error, value} = schema.validate(req.body)
         if (error) {
             switch (error.details[0].context.key) {
                 case 'email':
@@ -34,8 +32,8 @@ module.exports = {
                     })
             }
         } else {
+            value,
             next()
         } 
     } 
 }
- */
