@@ -1,10 +1,10 @@
 <template>
   <div class="about">
     <h2>Version Eisen³</h2>
-    <router-link to="/">Go back</router-link>
+    <!-- <router-link to="/">Go back</router-link> -->
   </div>
   <div id="app">
-    <h2>{{ date }}</h2>
+    <h3>{{ date }}</h3>
     <p>
       Here's the current time & the number of times the button is clicked:
       {{ showTime }}

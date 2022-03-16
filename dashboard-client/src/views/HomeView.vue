@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="SVA logo" src="assets/SVA-Logo.png" />
-    <DashHome msg="CC Software Development Dashboard" />
+    <!-- <img alt="SVA logo" src="assets/SVA-Logo.png" /> -->
+    <DashHome msg="Competence Center Software Development" />
   </div>
 </template>
 
@@ -16,3 +16,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.home {
+  color: #427fb9;
+}
+</style>

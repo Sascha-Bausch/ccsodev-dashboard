@@ -8,14 +8,9 @@
 </template>
 
 <script>
-
-
-/* export default {
-  name: 'app',
-  components: {
-    PageHeader
-  }
-} */
+export default {
+  
+}
 </script>
 
 
@@ -29,15 +24,16 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 15px;
+  background-color: #427fb9;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
 }
 
 nav a.router-link-exact-active {
-  color: #427fb9;
+  color: white;
 }
 </style>
