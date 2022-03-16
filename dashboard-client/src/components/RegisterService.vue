@@ -13,6 +13,8 @@
             v-model="password"
             placeholder="password" />
         <br>
+        <div class="error" v-html="error" />
+        <br>
         <button @click="register">Register</button>
     </div>
 </template>
@@ -24,7 +26,8 @@ export default {
     data () {
         return {
             email:'',
-            password: ''
+            password: '',
+            error: null
         }        
     },
     methods: {
@@ -57,10 +60,16 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+    font-style: oblique;
+}
 input {
     margin: 5px;
 }
 button {
     margin: 5px;
+}
+.error {
+    color: red;
 }
 </style>
