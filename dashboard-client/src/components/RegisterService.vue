@@ -1,13 +1,12 @@
 <template>
     <div>
-        <h2>Register</h2>
-        <input 
+        <input id="email"
             type="email"
             name="email"
             v-model="email"
             placeholder="email" />
         <br>
-        <input
+        <input id="pw"
             type="password"
             name="password"
             v-model="password"
@@ -15,7 +14,7 @@
         <br>
         <div class="error" v-html="error" />
         <br>
-        <button @click="register">Register</button>
+        <button @click="register">login</button>
     </div>
 </template>
 
@@ -60,14 +59,17 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-    font-style: oblique;
-}
+/* div {
+    margin: 40px;
+} */
 input {
     margin: 5px;
 }
 button {
     margin: 5px;
+}
+#email {
+    margin-top: 5%;
 }
 .error {
     color: red;

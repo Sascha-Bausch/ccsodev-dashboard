@@ -1,16 +1,19 @@
 <template>
   <div class="about">
-    <h2>Version Eisen³</h2>
+    <h2>Systemvertrieb Alexander GmbH</h2>
+    <a href="https://www.sva.de/" target="_blank" rel="nofollow">www.sva.de</a>
+  </div>
+  <div class="logo">
+    <img alt="SVA logo" src="SVA-Logo.png" />
     <!-- <router-link to="/">Go back</router-link> -->
   </div>
-  <div id="app">
+  <div id="date">
     <h3>{{ date }}</h3>
-    <p>
-      Here's the current time & the number of times the button is clicked:
-      {{ showTime }}
-    </p>
-    <button @click="clickButton">Click me!</button>
-    <p>It's: {{ buttonClick }}</p>
+  </div>
+  <button @click="clickButton">Click me if you want the time!</button>
+  <div id="time">
+    <h3>{{ showTime }}</h3>
+    <p>Number of button clicks: {{ buttonClick }}</p>
   </div>
 </template>
 
@@ -18,14 +21,14 @@
 import { ref, onMounted, watch } from "vue";
 export default {
   setup() {
-    const showTime = ref(0);
+    const buttonClick = ref(0);
     function clickButton() {
-      showTime.value++;
+      buttonClick.value++;
     }
 
-    const buttonClick = ref("");
-    watch(showTime, () => {
-      buttonClick.value = new Date().toTimeString();
+    const showTime = ref("");
+    watch(buttonClick, () => {
+      showTime.value = new Date().toTimeString();
     });
 
     let date = ref("");
@@ -42,3 +45,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+a {
+  color: #4e83bf;
+}
+button {
+  background-color: #4e83bf;
+  color: antiquewhite;
+}
+.logo {
+  margin: 5px;
+}
+</style>

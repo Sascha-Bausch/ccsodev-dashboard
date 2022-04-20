@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/register">Register</router-link>
+    <router-link to="/register">Login</router-link>
   </nav>
   <router-view />
 </template>
@@ -20,12 +20,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 nav {
   padding: 15px;
-  background-color: #427fb9;
+  background-color: #4e83bf;
 }
 
 nav a {
