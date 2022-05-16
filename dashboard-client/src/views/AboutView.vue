@@ -10,7 +10,7 @@
   <div id="date">
     <h3>{{ date }}</h3>
   </div>
-  <button @click="clickButton">Click me if you want the time!</button>
+  <button @click="clickButton">Wanna know what time it is?</button>
   <div id="time">
     <h3>{{ showTime }}</h3>
     <p>Number of button clicks: {{ buttonClick }}</p>
