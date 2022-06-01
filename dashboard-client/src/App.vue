@@ -24,7 +24,7 @@ export default {
 
 nav {
   padding: 15px;
-  background-color: #4e83bf;
+  background-color: rgb(80, 130, 195);
 }
 
 nav a {

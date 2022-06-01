@@ -13,7 +13,7 @@
   <button @click="clickButton">Wanna know what time it is?</button>
   <div id="time">
     <h3>{{ showTime }}</h3>
-    <p>Number of button clicks: {{ buttonClick }}</p>
+    <!-- <p>Number of button clicks: {{ buttonClick }}</p> -->
   </div>
 </template>
 
@@ -40,7 +40,7 @@ export default {
       date,
       showTime,
       clickButton,
-      buttonClick,
+      /* buttonClick, */
     };
   },
 };
