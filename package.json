@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sql-nodejs": "^0.0.5"
+  }
+}

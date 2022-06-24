@@ -1,0 +1,102 @@
+{
+    "mitarbeiter": [
+        {
+            "id": 2601,
+            "vorname": "Waldemar",
+            "nachname": "Berger",
+            "team": "Individualentwicklung",
+            "email": "Waldemar.Berger@sva.de",
+            "telefon": "+49 151 12345678",
+            "funktion": "Frontend Architect",
+            "schwerpunkt": "Frontend"
+        },
+        {
+            "id": 2602,
+            "vorname": "Peter",
+            "nachname": "Bockowski",
+            "team": "Individualentwicklung",
+            "email": "Waldemar.Berger@sva.de",
+            "telefon": "+49 151 12345678",
+            "funktion": "Software Engineer",
+            "schwerpunkt": "Frontend"
+        },
+        {
+            "id": 2603,
+            "vorname": "Julika",
+            "nachname": "Hinz",
+            "team": "Individualentwicklung",
+            "email": "Waldemar.Berger@sva.de",
+            "telefon": "+49 151 12345678",
+            "funktion": "IT Project & Requirements Manager",
+            "schwerpunkt": "Product Owner & PreSales"
+        },
+        {
+            "id": 2604,
+            "vorname": "Marko",
+            "nachname": "Hitsch",
+            "team": "Individualentwicklung",
+            "email": "Waldemar.Berger@sva.de",
+            "telefon": "+49 151 12345678",
+            "funktion": "Software Architect",
+            "schwerpunkt": "Fullstack"
+        },
+        {
+            "id": 2605,
+            "vorname": "Miriam",
+            "nachname": "Putschar",
+            "team": "Individualentwicklung",
+            "email": "Waldemar.Berger@sva.de",
+            "telefon": "+49 151 12345678",
+            "funktion": "UX/UI Designer & Consultant",
+            "schwerpunkt": "UX/UI Design & Consulting"
+        }
+    ],
+
+    "geschaeftsstelle": [
+        {
+            "id": 1,
+            "bezeichnung": "Geschäftsstelle Nord",
+            "anzahl": "1 Standort",
+            "adresse": "Allerkai 4",
+            "ort": "28309 Bremen"
+        },
+        {
+            "id": 2,
+            "bezeichnung": "Geschäftsstelle Nord-West",
+            "anzahl": "1 Standort",
+            "adresse": "Konrad-Zuse-Straße 14",
+            "ort": "58239 Schwerte"
+        },
+        {
+            "id": 3,
+            "bezeichnung": "Geschäftsstelle Ost",
+            "anzahl": "1 Standort",
+            "adresse": "Rotherstraße 16",
+            "ort": "10245 Berlin"
+        },
+        {
+            "id": 4,
+            "bezeichnung": "Geschäftsstelle Mitte",
+            "anzahl": "5 Standorte",
+            "adresse1": "Joseph-Schumpeter-Allee 29",
+            "ort1": "53227 Bonn",
+            "adresse2": "Kennedydamm 24",
+            "ort2": "40476 Düsseldorf",
+            "adresse3": "Breslauer Platz 4",
+            "ort3": "50668 Köln",
+            "adresse4": "Borsigstraße 26",
+            "ort4": "65205 Wiesbaden",
+            "adresse5": "Friedrich-Bergius-Ring 52",
+            "ort5": "97076 Würzburg"
+        },
+        {
+            "id": 5,
+            "bezeichnung": "Geschäftsstelle Süd-West",
+            "anzahl": "2 Standorte",
+            "adresse1": "Amalienbadstraße 41",
+            "ort1": "76227 Karlsruhe",
+            "adresse2": "Syrlinstraße 35",
+            "ort2": "89073 Ulm"
+        }
+    ]
+}

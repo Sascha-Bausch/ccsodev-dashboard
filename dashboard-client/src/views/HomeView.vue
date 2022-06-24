@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <!-- <img alt="SVA logo" src="assets/SVA-Logo.png" /> -->
     <DashHome msg="Competence Center Software Development" />
+    <img alt="SVA logo" src="SVA-Logo.png" />
     <DashMap />
   </div>
 </template>
@@ -16,10 +16,13 @@ export default {
   components: {
     DashHome,
     DashMap
-},
+  },
 };
 </script>
 
 <style scoped>
-
+img {
+  width: 75px;
+  height: 48px;
+}
 </style>

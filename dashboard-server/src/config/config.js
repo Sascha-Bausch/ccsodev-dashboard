@@ -7,7 +7,7 @@ module.exports = {
         options: {
             dialect: process.env.DIALECT || 'sqlite',
             host: process.env.HOST || 'localhost',
-            storage: './dashboard.sqlite'
+            storage: '../../dash-data.sql'
         }
     }
 }

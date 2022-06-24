@@ -10,7 +10,7 @@
   <div id="date">
     <h3>{{ date }}</h3>
   </div>
-  <button @click="clickButton">Wanna know what time it is?</button>
+  <button @click="clickButton">Uhrzeit!</button>
   <div id="time">
     <h3>{{ showTime }}</h3>
     <!-- <p>Number of button clicks: {{ buttonClick }}</p> -->
@@ -51,8 +51,17 @@ a {
   color: #4e83bf;
 }
 button {
+  width: 110px;
+  height: 40px;
   background-color: #4e83bf;
-  color: antiquewhite;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+#date {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
 }
 .logo {
   margin: 5px;
